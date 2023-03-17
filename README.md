@@ -20,6 +20,3 @@ script.type = 'text/javascript';
 script.src = 'https://gokulqbs.github.io/SEO-Submission-script/index.js';     
 document.head.appendChild(script);   
 SEOSubmission("title","www.example.com","name","example@mail.com","description","example description","service","Business","business")  
-
-
-a product of Qbrainstorm softwares.
