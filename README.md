@@ -13,3 +13,13 @@ SEOSubmission("title","www.example.com","name","example@mail.com","description",
 important!! change the contents before submit.    
   
 and if you neeed to submit the same to another website just open terminal using shortcut(ctrl+shift+J) and hit up arraw(⬆) in your keyboard and enter to submit.   
+
+use the code combination to submit fastly:    
+let script = document.createElement('script');     
+script.type = 'text/javascript';     
+script.src = 'https://gokulqbs.github.io/SEO-Submission-script/index.js';     
+document.head.appendChild(script);   
+SEOSubmission("title","www.example.com","name","example@mail.com","description","example description","service","Business","business")  
+
+
+a product of Qbrainstorm softwares.
