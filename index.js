@@ -1,19 +1,18 @@
-// atlest working for now
+function SEOSubmission(title,url,name,mail,description,category,category1,category2,category3) {
 
-let Stitle = "detergent powder manufacturers";
-let Surl = "https://www.arumugachemicals.com";
-let Sname = "Arumuga Chemicals";
-let Smail = "mail@arumugachemicals.com";
-let Sdescription = "Our chemical company involved only in trading of all types of detergent raw materials and has wide range of customers in soaps & detergents";
-let selectvalue = "chemicals";
-let selectvalue1 = "Chemicals";
-let selectvalue2 = "Business";
-let selectvalue3 = "business";
+let Stitle = title;
+let Surl = url;
+let Sname = name;
+let Smail = mail;
+let Sdescription = description;
+let selectvalue = category;
+let selectvalue1 = category1;
+let selectvalue2 = category2;
+let selectvalue3 = category3;
 let Rname, Rmail, Rurl, Rdescription, Rtitle = true;
 let Output = "Error in";
 let elmnt = document.querySelectorAll("select")[0];
 
-function SEOSubmission(elmnt, selectvalue) {
   for (var i = 0; i <= elmnt.options.length; i++) {
     if (elmnt.options[i].innerHTML.includes(selectvalue) || elmnt.options[i].innerHTML.includes(selectvalue1) || elmnt.options[i].innerHTML.includes(selectvalue2) || elmnt.options[i].innerHTML.includes(selectvalue3) != false) {
       elmnt.selectedIndex = i;
@@ -81,4 +80,3 @@ function SEOSubmission(elmnt, selectvalue) {
     return("---------Executed Successfully---------")
   }
 }
-SEOSubmission(elmnt, selectvalue);
