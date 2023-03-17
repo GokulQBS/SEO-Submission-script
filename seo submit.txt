@@ -47,3 +47,6 @@ function selectItemByValue(elmnt, selectvalue) {
   }
 }
 selectItemByValue(elmnt, selectvalue);
+
+
+document.write('<script src="F://WORKING AREA/seo script.js" type="text/javascript"></script>');
