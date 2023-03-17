@@ -76,7 +76,7 @@ function SEOSubmission(elmnt, selectvalue) {
     if (Rtitle == false) {
       Output = Output + ", Title";
     }
-    return("---------"+Output+"---------");
+    return("--------------"+Output+"--------------");
   } else {
     return("---------Executed Successfully---------")
   }
