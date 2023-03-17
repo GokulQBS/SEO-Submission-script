@@ -1,4 +1,4 @@
-function SEOSubmission(title,url,name,mail,description,category,category1,category2,category3) {
+function SEOSubmission(title,url,name,mail,category,category1,category2,category3,description) {
 let Rname, Rmail, Rurl, Rdescription, Rtitle = true;
 let Output = "Error in";
 let elmnt = document.querySelectorAll("select")[0];
