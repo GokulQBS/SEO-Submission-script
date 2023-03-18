@@ -119,25 +119,3 @@ function SEOSubmission(title, url, name, mail, category, category1, category2, c
     return ("---------Executed Successfully---------")
   }
 }
-SEOSubmission("granules detergent colour speckles manufacturers",
-              "https://www.arumugachemicals.com",
-              "Armuga Chemicals",
-              "mail@arumugachemicals.com",
-              "Chemicals",
-              "chemicals",
-              "Chemical",
-              "chemical","Our chemical company involved only in trading of all types of detergent raw materials and has wide range of customers in soaps & detergents")
-
-
-// let script = document.createElement('script');
-// script.type = 'text/javascript';
-// script.src = 'https://gokulqbs.github.io/SEO-Submission-script/index.js';
-// document.head.appendChild(script);
-// SEOSubmission("granules detergent colour speckles manufacturers",
-//               "https://www.arumugachemicals.com",
-//               "Armuga Chemicals",
-//               "mail@arumugachemicals.com",
-//               "Chemicals",
-//               "chemicals",
-//               "Chemical",
-//               "chemical","Our chemical company involved only in trading of all types of detergent raw materials and has wide range of customers in soaps & detergents")
