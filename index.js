@@ -42,7 +42,12 @@ function SEOSubmission(title, url, name, mail, category, category1, category2, c
       document.getElementsByName("MAIL")[0].value = mail;
     } else if (document.getElementsByName("OWNER_EMAIL").length > 0) {
       document.getElementsByName("OWNER_EMAIL")[0].value = mail;
-    } else if (document.getElementsByName("your_email").length > 0) {
+    }else if (document.getElementsByName("email").length > 0) {
+      document.getElementsByName("email")[0].value = mail;
+    }else if (document.getElementsByName("Email").length > 0) {
+      document.getElementsByName("Email")[0].value = mail;
+    }
+    else if (document.getElementsByName("your_email").length > 0) {
       document.getElementsByName("your_email")[0].value = mail;
     }
     else {
