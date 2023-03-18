@@ -1,5 +1,5 @@
-function SEOSubmission(title,url,name,mail,category,category1,category2,category3,description) {
-let Rname, Rmail, Rurl, Rdescription, Rtitle = true;
+function SEOSubmission(title,url,name,mail,category,category1,category2,category3,description,reciprocal) {
+let Rname, Rmail, Rurl, Rdescription, Rtitle,Rreciprocal = true;
 let Output = "Error in";
 let elmnt = document.querySelectorAll("select")[0];
 
@@ -48,6 +48,14 @@ let elmnt = document.querySelectorAll("select")[0];
   }
   else {
     Rname = false;
+  }
+  
+  if (document.getElementsByName("reciprocal").length > 0) {
+    document.getElementsByName("reciprocal")[0].value = reciprocal;
+  } else if (document.getElementsByName("RECIPROCAL").length > 0) {
+    document.getElementsByName("RECIPROCAL")[0].value = reciprocal;
+  } else {
+    Rreciprocal = false;
   }
 
   for (var i = 0; i <= elmnt.options.length; i++) {
