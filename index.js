@@ -1,6 +1,6 @@
 
-function SEOSubmission(title, url, name, mail, category, category1, category2, category3, description, reciprocal) {
-  let Rname, Rmail, Rurl, Rdescription, Rtitle, Rreciprocal = true;
+function SEOSubmission(title, url, name, mail, category, category1, category2, category3, description, reciprocal,keywords) {
+  let Rname, Rmail, Rurl, Rdescription, Rtitle, Rreciprocal,Rkeywords = true;
   let Output = "Error in";
   let elmnt = document.querySelectorAll("select")[0];
 
@@ -27,6 +27,7 @@ function SEOSubmission(title, url, name, mail, category, category1, category2, c
       Rtitle = false;
     }
   }
+   
   if (url != undefined) {
     if (document.getElementsByName("URL").length > 0) {
       document.getElementsByName("URL")[0].value = url;
@@ -83,6 +84,15 @@ function SEOSubmission(title, url, name, mail, category, category1, category2, c
       document.getElementsByName("RECIPROCAL")[0].value = reciprocal;
     } else {
       Rreciprocal = false;
+    }
+  }
+  if (keywords != undefined) {
+    if (document.getElementsByName("keywords").length > 0) {
+      document.getElementsByName("keywords")[0].value = keywords;
+    } else if (document.getElementsByName("KEYWORDS").length > 0) {
+      document.getElementsByName("KEYWORDS")[0].value = keywords;
+    } else {
+      Rkeywords = false;
     }
   }
 
