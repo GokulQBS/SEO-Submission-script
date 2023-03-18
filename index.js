@@ -105,7 +105,7 @@ function SEOSubmission(title, url, name, mail, category, category1, category2, c
     }
   }
 
-  if (Rname || Rmail || Rurl || Rdescription || Rtitle || Rreciprocal != true) {
+  if (Rname || Rmail || Rurl || Rdescription || Rtitle || Rreciprocal || Rkeywords != true) {
     if (Rname == false) {
       Output = Output + ", Name";
     }
@@ -122,6 +122,9 @@ function SEOSubmission(title, url, name, mail, category, category1, category2, c
       Output = Output + ", Title";
     }
     if (Rreciprocal == false) {
+      Output = Output + ", Reciprocal";
+    }
+    if(Rkeywords == false){
       Output = Output + ", Reciprocal";
     }
     return ("--------------" + Output + "--------------");
