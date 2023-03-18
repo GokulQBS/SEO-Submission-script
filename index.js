@@ -32,6 +32,8 @@ function SEOSubmission(title, url, name, mail, category, category1, category2, c
       document.getElementsByName("URL")[0].value = url;
     } else if (document.getElementsByName("url").length > 0) {
       document.getElementsByName("url")[0].value = url;
+    } else if (document.getElementsByName("urlsite").length > 0) {
+      document.getElementsByName("urlsite")[0].value = url;
     } else {
       Rurl = false;
     }
@@ -46,9 +48,10 @@ function SEOSubmission(title, url, name, mail, category, category1, category2, c
       document.getElementsByName("email")[0].value = mail;
     }else if (document.getElementsByName("Email").length > 0) {
       document.getElementsByName("Email")[0].value = mail;
-    }
-    else if (document.getElementsByName("your_email").length > 0) {
+    } else if (document.getElementsByName("your_email").length > 0) {
       document.getElementsByName("your_email")[0].value = mail;
+    }else if (document.getElementsByName("siteml").length > 0) {
+      document.getElementsByName("siteml")[0].value = mail;
     }
     else {
       Rmail = false;
@@ -61,6 +64,8 @@ function SEOSubmission(title, url, name, mail, category, category1, category2, c
       document.getElementsByName("name")[0].value = name;
     } else if (document.getElementsByName("NAME").length > 0) {
       document.getElementsByName("NAME")[0].value = name;
+    }else if (document.getElementsByName("sitem").length > 0) {
+      document.getElementsByName("sitem")[0].value = name;
     } else if (document.getElementsByName("OWNER_NAME").length > 0) {
       document.getElementsByName("OWNER_NAME")[0].value = name;
     } else if (document.getElementsByName("your_name").length > 0) {
