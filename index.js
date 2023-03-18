@@ -30,7 +30,10 @@ let elmnt = document.querySelectorAll("select")[0];
     document.getElementsByName("MAIL")[0].value = mail;
   } else if (document.getElementsByName("OWNER_EMAIL").length > 0) {
     document.getElementsByName("OWNER_EMAIL")[0].value = mail;
-  } else {
+  } else if (document.getElementsByName("your_email").length > 0) {
+    document.getElementsByName("your_email")[0].value = mail;
+  }
+  else {
     Rmail = false;
   }
 
@@ -40,7 +43,10 @@ let elmnt = document.querySelectorAll("select")[0];
     document.getElementsByName("NAME")[0].value = name;
   } else if (document.getElementsByName("OWNER_NAME").length > 0) {
     document.getElementsByName("OWNER_NAME")[0].value = name;
-  } else {
+  } else if(document.getElementsByName("your_name").length > 0){
+    document.getElementsByName("your_name")[0].value = name;
+  }
+  else {
     Rname = false;
   }
 
