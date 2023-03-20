@@ -102,7 +102,7 @@ function SEOSubmission(title, url, name, mail, category, category1, category2, c
 
   if ( category == undefined) {
     for (var i = 0; i <= elmnt.options.length; i++) {
-      if (elmnt.options[i].innerHTML.includes(category) || elmnt.options[i].innerHTML.includes(category1) || elmnt.options[i].innerHTML.includes(category2) || elmnt.options[i].innerHTML.includes(category3) != false) {
+      if (elmnt.options[i].innerHTML.search(category) || elmnt.options[i].innerHTML.search(category1) || elmnt.options[i].innerHTML.search(category2) || elmnt.options[i].innerHTML.search(category3) != -1) {
         elmnt.selectedIndex = i;
         break;
       }
