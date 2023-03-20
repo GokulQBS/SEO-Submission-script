@@ -93,6 +93,8 @@ function SEOSubmission(title, url, name, mail, category, category1, category2, c
       document.getElementsByName("keywords")[0].value = keywords;
     } else if (document.getElementsByName("KEYWORDS").length > 0) {
       document.getElementsByName("KEYWORDS")[0].value = keywords;
+    }else if (document.getElementsByName("META_KEYWORDS").length > 0) {
+      document.getElementsByName("META_KEYWORDS")[0].value = keywords;
     } else {
       Rkeywords = false;
     }
