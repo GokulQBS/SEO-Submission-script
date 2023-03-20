@@ -82,6 +82,8 @@ function SEOSubmission(title, url, name, mail, category, category1, category2, c
       document.getElementsByName("reciprocal")[0].value = reciprocal;
     } else if (document.getElementsByName("RECIPROCAL").length > 0) {
       document.getElementsByName("RECIPROCAL")[0].value = reciprocal;
+    }else if (document.getElementsByName("RECPR_URL").length > 0) {
+      document.getElementsByName("RECPR_URL")[0].value = reciprocal;
     } else {
       Rreciprocal = false;
     }
