@@ -129,7 +129,7 @@ function SEOSubmission(title, url, name, mail, category, category1, category2, c
       Output = Output + ", Reciprocal";
     }
     if(Rkeywords == false){
-      Output = Output + ", Reciprocal";
+      Output = Output + ", keywords";
     }
     return ("--------------" + Output + "--------------");
   } else {
