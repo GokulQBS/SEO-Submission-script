@@ -102,7 +102,6 @@ function SEOSubmission(title, url, name, mail, category, description, reciprocal
     for (let i = 0; i < options; i++) {
         if (document.querySelectorAll('select')[0].options[i].innerText.toLowerCase().includes(category)) {
             document.querySelectorAll('select')[0].selectedIndex = i;
-            console.log('gotit');
             break;
     }else{
       Rcategory=false;
