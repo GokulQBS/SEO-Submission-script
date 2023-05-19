@@ -1,15 +1,11 @@
 
 function SEOSubmission(title, url, name, mail, category, category1, category2, category3, description, reciprocal,keywords) {
-  let Rname, Rmail, Rurl, Rdescription, Rtitle, Rreciprocal,Rkeywords = true;
+  let Rname, Rmail, Rurl, Rdescription, Rtitle, Rreciprocal,Rkeywords,Rcategory = true;
   let Output = "Error in";
   let elmnt = document.querySelectorAll("select")[0];
 
 
   if (description != undefined) {
-    // if (document.querySelectorAll("textarea").length > 0) {
-    //   document.querySelectorAll("textarea")[0].value = description;
-    //   document.querySelectorAll("textarea")[1].value = description;
-    // } else 
     if(document.querySelectorAll("textarea").length > 0){
       document.querySelectorAll("textarea")[0].value = description;
     }else{
@@ -100,14 +96,19 @@ function SEOSubmission(title, url, name, mail, category, category1, category2, c
     }
   }
 
-  if ( category == undefined) {
-    for (var i = 0; i <= elmnt.options.length; i++) {
-      if (elmnt.options[i].innerHTML.include(category) || elmnt.options[i].innerHTML.include(category1) || elmnt.options[i].innerHTML.include(category2) || elmnt.options[i].innerHTML.include(category3) != false) {
-        elmnt.selectedIndex = i;
-        break;
-      }
+  if ( category != undefined) {    
+    let element = document.querySelectorAll('select')[0];
+    let options = document.querySelectorAll('select')[0].options.length;
+    for (let i = 0; i < options; i++) {
+        if (document.querySelectorAll('select')[0].options[i].innerText.toLowerCase().includes(category)) {
+            document.querySelectorAll('select')[0].selectedIndex = i;
+            console.log('gotit');
+            break;
+    }else{
+      Rcategory=false;
     }
-  }
+}    
+}
 
   if (Rname || Rmail || Rurl || Rdescription || Rtitle || Rreciprocal || Rkeywords != true) {
     if (Rname == false) {
@@ -130,6 +131,9 @@ function SEOSubmission(title, url, name, mail, category, category1, category2, c
     }
     if(Rkeywords == false){
       Output = Output + ", keywords";
+    }
+    if(Rcategory == false){
+      Output = Output + ", category";
     }
     return ("--------------" + Output + "--------------");
   } else {
