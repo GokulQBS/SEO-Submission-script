@@ -1,5 +1,5 @@
 
-function SEOSubmission(title, url, name, mail, category, category1, category2, category3, description, reciprocal,keywords) {
+function SEOSubmission(title, url, name, mail, category, description, reciprocal,keywords) {
   let Rname, Rmail, Rurl, Rdescription, Rtitle, Rreciprocal,Rkeywords,Rcategory = true;
   let Output = "Error in";
   let elmnt = document.querySelectorAll("select")[0];
