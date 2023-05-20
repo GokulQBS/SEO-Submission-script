@@ -1,5 +1,5 @@
 
-function SEOSubmission(title, url, name, mail, category, description, reciprocal,keywords) {
+function SEOSubmission(title, url, name, mail, category, category2, description, reciprocal,keywords) {
   let Rname, Rmail, Rurl, Rdescription, Rtitle, Rreciprocal,Rkeywords,Rcategory = true;
   let Output = "Error in";
   let elmnt = document.querySelectorAll("select")[0];
@@ -99,14 +99,25 @@ function SEOSubmission(title, url, name, mail, category, description, reciprocal
   if ( category != undefined) {    
     let element = document.querySelectorAll('select')[0];
     let options = document.querySelectorAll('select')[0].options.length;
+    let finded=false;
     for (let i = 0; i < options; i++) {
         if (document.querySelectorAll('select')[0].options[i].innerText.toLowerCase().includes(category)) {
             document.querySelectorAll('select')[0].selectedIndex = i;
+            finded =true;
             break;
-    }else{
-      Rcategory=false;
+        }
     }
-}    
+    if(finded == false){
+       for (let i = 0; i < options; i++) {
+        if (document.querySelectorAll('select')[0].options[i].innerText.toLowerCase().includes(category2)) {
+            document.querySelectorAll('select')[0].selectedIndex = i;
+            finded =true;
+            break;
+        }
+    }
+      if(finded == false){
+        Rcategory = false;
+      }
 }
 
   if (Rname || Rmail || Rurl || Rdescription || Rtitle || Rreciprocal || Rkeywords != true) {
