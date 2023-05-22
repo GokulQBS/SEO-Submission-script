@@ -96,7 +96,7 @@ function SEOSubmission(title, url, name, mail, category, category2, description,
     }
   }
 
-  if ( category != undefined) {    
+  if ( category != undefined) {  
     let element = document.querySelectorAll('select')[0];
     let options = document.querySelectorAll('select')[0].options.length;
     let finded=false;
@@ -107,6 +107,7 @@ function SEOSubmission(title, url, name, mail, category, category2, description,
             break;
         }
     }
+  }
     if(finded == false){
        for (let i = 0; i < options; i++) {
         if (document.querySelectorAll('select')[0].options[i].innerText.toLowerCase().includes(category2)) {
