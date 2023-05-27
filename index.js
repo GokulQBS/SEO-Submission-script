@@ -97,6 +97,7 @@ function SEOSubmission(title, url, name, mail, category, category2, description,
   }
 
   if ( category != undefined) {
+    if(document.querySelectorAll('select')[0] !=undefined){
     let options = document.querySelectorAll('select')[0].options.length;
     let finded=false;
     for (let i = 0; i < options; i++) {
@@ -118,6 +119,7 @@ function SEOSubmission(title, url, name, mail, category, category2, description,
       if(finded == false){
         Rcategory = false;
       }
+    }
 }
 }
 
